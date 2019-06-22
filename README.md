@@ -2,6 +2,8 @@
 
 Sistema de eventos encomendado pela Morena.
 
+[![Build Status](https://travis-ci.org/mviniciussantos/eventex.svg?branch=master)](https://travis-ci.org/mviniciussantos/eventex)
+
 ## Como desenvolver?
 
 1. Clone o repositório.
@@ -32,7 +34,7 @@ python manage.py test
 heroku create minhainstancia
 heroku config:push
 heroku config:SECRET_KEY= 'python contrib/secret_gen.py'
-heroku config:DEGUG=False
+heroku config:DEBUG=False
 #configura o email
 git push heroku master --force
 ```
