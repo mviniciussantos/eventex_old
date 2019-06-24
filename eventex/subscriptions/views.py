@@ -39,7 +39,7 @@ def new(request):
 def detail(request, pk):
     try:
         subscription = Subscription.objects.get(pk=pk)
-    except Subscription.DoesNotFound:
+    except Subscription.DoesNotExist:
         raise Http404
 
     context = {'subscription': subscription}
